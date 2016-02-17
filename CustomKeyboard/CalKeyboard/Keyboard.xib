@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="beatles" destination="fPM-7P-wVz" id="qAb-nW-gC3"/>
+                <outlet property="bimAndBen" destination="Qq1-TL-zpj" id="XGa-Z0-VKX"/>
+                <outlet property="deleteKeyboardButton" destination="uGE-Gc-PYU" id="6Zy-mB-beL"/>
+                <outlet property="foxInSocks" destination="aL2-mZ-bVU" id="c5J-il-Jrp"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="returnKeyboardButton" destination="PcU-vi-cjw" id="Kv8-0D-4OG"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -14,13 +19,33 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                    <rect key="frame" x="7" y="162" width="32" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
                         <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
                     </constraints>
-                    <state key="normal" title="N"/>
+                    <state key="normal" title="Next"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL2-mZ-bVU">
+                    <rect key="frame" x="27" y="85" width="86" height="30"/>
+                    <state key="normal" title="Fox in Socks"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qq1-TL-zpj">
+                    <rect key="frame" x="144" y="85" width="86" height="30"/>
+                    <state key="normal" title="Bim and Ben"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPM-7P-wVz">
+                    <rect key="frame" x="272" y="85" width="51" height="30"/>
+                    <state key="normal" title="Beatles"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGE-Gc-PYU">
+                    <rect key="frame" x="322" y="8" width="45" height="30"/>
+                    <state key="normal" title="Delete"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcU-vi-cjw">
+                    <rect key="frame" x="321" y="162" width="46" height="30"/>
+                    <state key="normal" title="Return"/>
                 </button>
             </subviews>
             <constraints>
